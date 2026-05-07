@@ -15,6 +15,11 @@ A full-stack multi-tenant e-commerce platform where multiple vendors can list pr
 | ORM        | SQLAlchemy 2.0                      |
 
 ---
+### Demo videos
+
+frontend demo video : https://drive.google.com/file/d/1F-lYKp2CV9Nbf8Z7RkJVry0jtU12oghW/view?usp=sharing
+
+backend demo video : https://drive.google.com/file/d/1It6HiUBsDNv9nb8RVRvEy_k-jHIlIvDl/view?usp=sharing
 
 ## 📁 Project Structure
 
