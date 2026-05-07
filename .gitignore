@@ -1,0 +1,239 @@
+# ════════════════════════════════════════════════
+#   MULTI-VENDOR E-COMMERCE — .gitignore
+# ════════════════════════════════════════════════
+
+
+# ── PYTHON / FASTAPI (Backend) ───────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+virtualenv/
+.virtualenv/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+wheels/
+*.whl
+pip-wheel-metadata/
+
+# Pytest / testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+*.cover
+nosetests.xml
+test-results/
+
+# MyPy / type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+
+# ── DATABASE ──────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+ecommerce.db
+
+
+# ── ENVIRONMENT / SECRETS ─────────────────────────
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+.env.test
+*.env
+!.env.example          # keep the example file
+
+
+# ── NODE / REACT (Frontend) ──────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnp/
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# React build output
+build/
+dist/
+out/
+
+# Vite
+.vite/
+vite.config.js.timestamp-*
+
+# Next.js (if migrated)
+.next/
+out/
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# TypeScript
+*.tsbuildinfo
+
+
+# ── LOGS ─────────────────────────────────────────
+logs/
+*.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pip-log.txt
+pip-delete-this-directory.txt
+
+
+# ── OS FILES ──────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+.TemporaryItems
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# ── EDITOR / IDE ──────────────────────────────────
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json.example
+
+# JetBrains (PyCharm, WebStorm)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+
+# Vim
+*.swp
+*.swo
+*.swn
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+Session.vim
+.netrwhist
+tags
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Atom
+.atom/
+
+
+# ── DOCKER ───────────────────────────────────────
+# Keep docker-compose.yml and Dockerfiles tracked
+# Ignore local override files
+docker-compose.override.yml
+docker-compose.local.yml
+.docker/
+
+
+# ── UPLOADS / MEDIA ──────────────────────────────
+uploads/
+media/
+static/uploads/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.mov
+!frontend/public/*.png    # keep public assets
+!frontend/public/*.ico
+
+
+# ── SECURITY / CERTIFICATES ──────────────────────
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_rsa.pub
+*.ppk
+
+
+# ── MISC ─────────────────────────────────────────
+*.bak
+*.tmp
+*.temp
+*.swp
+*.orig
+*.rej
+.cache/
+.sass-cache/
+.grunt/
+.lock-wscript
